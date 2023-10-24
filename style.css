@@ -14,6 +14,7 @@ body{
 }
 form{
     width: 35%;
+    height: 75vh;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -32,12 +33,13 @@ input{
     font-size: 16px;
     background: #fbfbfb;
     border: 2px solid transparent;
+    outline: none;
     height: 36px;
     box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%); 
     font-family: 'Kalam', cursive;  
 }
 input:focus{
-    border: 2px solid #000;
+    border: 2px solid #106df8;
     border-radius: 4px;
 }
 button {
@@ -84,3 +86,46 @@ button:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+.waiting #processing{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    display: none;
+}
+#progress{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border: 10px solid #f4a261;
+    border-radius: 15px;
+    display: none;
+    
+}
+#progress #color{
+    position: absolute;
+    background-color: #ffffff;
+    top: -5px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 1s infinite linear;  
+    display: none;
+    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
