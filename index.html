@@ -7,27 +7,39 @@
     <title>Google Pay</title>
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <label for="">Receiver's Name</label>
-            <input type="text" required placeholder="Enter Full Name">
-            <label for="">Receiver's Phone Number</label>
-            <input type="text" required placeholder="Enter Phone No.">
-            <label for="">Purpose of sending money</label>
-            <input type="text">
-            <label for="">Payment Amount</label>
-            <input type="Number" required>
-            <button>Pay Now</button>
-            <div class="waiting">
-                <span id="processing">Processing...</span>
-                <div id="progress">
-                    <div id="color"></div>
-                </div>
+    <form action="">
+        <label for="">Receiver's Name *</label>
+        <input type="text" required placeholder="Enter Full Name">
+        <label for="">Receiver's Phone Number *</label>
+        <input type="text" required placeholder="Enter Phone No.">
+        <label for="">Purpose of sending money</label>
+        <input type="text">
+        <label for="">Payment Amount *</label>
+        <input type="Number" required>
+        <button>Pay Now</button>
+        <div class="waiting">
+            <span id="processing">Processing...</span>
+            <div id="progress">
+                <div id="color"></div>
             </div>
-            
-            
-        </form>
-    </div>
+        </div>    
+    </form>
+    <div class="payment_done"></div>
+    <!-- <div class="container">
+        <div class="above">
+            <svg width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#3b82f6" d="m23 12l-2.44-2.78l.34-3.68l-3.61-.82l-1.89-3.18L12 3L8.6 1.54L6.71 4.72l-3.61.81l.34 3.68L1 12l2.44 2.78l-.34 3.69l3.61.82l1.89 3.18L12 21l3.4 1.46l1.89-3.18l3.61-.82l-.34-3.68L23 12m-13 5l-4-4l1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8Z"/>
+            </svg>
+            <p class="rs">₹ 1.00</p>
+            <p class="name">Paid to Naren Das</p>
+            <p class="num">6291286732</p>
+        </div>
+        <div class="down">
+            <p class="date">October 24, 2023 10:54 PM</p>
+            <p class="ID">UPI transaction ID : 3681686864826482</p>
+        </div> 
+    </div>-->
+
     <script src="./script.js"></script>
 </body>
 </html>
@@ -52,8 +64,3 @@
 
 
 
-<!-- <span>
-                <svg width="128" height="128" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#c2ff66" fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0Zm7.072 3.21l4.318-5.398l-.78-.624l-3.682 4.601L4.32 7.116l-.64.768l3.392 2.827Z" clip-rule="evenodd"/>
-                </svg>
-            </span> -->

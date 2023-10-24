@@ -12,7 +12,7 @@ body{
     background-repeat: no-repeat;
     font-family: 'Kalam', cursive;
 }
-form{
+form, .container{
     width: 35%;
     height: 75vh;
     display: flex;
@@ -86,7 +86,7 @@ button:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
 }
-
+ /*todo ------- processing bar -------  */
 .waiting #processing{
     font-size: 48px;
     font-weight: 700;
@@ -128,4 +128,30 @@ button:active {
     100%{
         width: 100%;
     }
-};
+}
+
+/* input, label, button, form{
+    display: none;
+} */
+
+.container{
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(203, 255, 203);
+}
+.container .above, .container .down{
+    text-align: center;
+    color: black;
+}
+.container .above .rs{
+    
+    font-size: 28px;
+}
+.container .above .name{
+    font-size: 20px;
+}
+.container .above .num{
+    font-size: 14px;
+    opacity: 0.6;
+}
