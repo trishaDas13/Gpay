@@ -155,3 +155,18 @@ button:active {
     font-size: 14px;
     opacity: 0.6;
 }
+
+.container .down .done {
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  box-shadow: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1rem;
+  height: auto;
+  line-height: 1.5;
+  padding: 6px 20px;
+}
+
